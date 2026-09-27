@@ -1,0 +1,246 @@
+{
+  "name": "marinski-plugins",
+  "owner": {
+    "name": "Marinski",
+    "url": "https://github.com/Marinski"
+  },
+  "metadata": {
+    "description": "One marketplace for Marinski's agent plugins, each pinned to an exact upstream commit.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "document-skills",
+      "description": "Create, edit, and analyze Excel spreadsheets, PowerPoint presentations, and PDF documents.",
+      "source": {
+        "source": "github",
+        "repo": "Marinski/ClaudeSkills",
+        "sha": "1e3e8d0e5194a5b0d9123afd73e6b19d3827be12"
+      },
+      "strict": false,
+      "category": "productivity",
+      "keywords": [
+        "xlsx",
+        "excel",
+        "pptx",
+        "powerpoint",
+        "pdf",
+        "documents"
+      ],
+      "skills": [
+        "./xlsx",
+        "./pptx",
+        "./pdf"
+      ]
+    },
+    {
+      "name": "development-skills",
+      "description": "Playwright web app testing, MCP server development, D3.js data visualization, and REST/GraphQL API design.",
+      "source": {
+        "source": "github",
+        "repo": "Marinski/ClaudeSkills",
+        "sha": "1e3e8d0e5194a5b0d9123afd73e6b19d3827be12"
+      },
+      "strict": false,
+      "category": "development",
+      "keywords": [
+        "playwright",
+        "testing",
+        "mcp",
+        "d3",
+        "visualization",
+        "api",
+        "openapi",
+        "graphql"
+      ],
+      "skills": [
+        "./webapp-testing",
+        "./mcp-builder",
+        "./d3js-visualization",
+        "./api-designer"
+      ]
+    },
+    {
+      "name": "database-skills",
+      "description": "SQL query writing, optimization, and schema design for PostgreSQL, MySQL, SQLite, and SQL Server.",
+      "source": {
+        "source": "github",
+        "repo": "Marinski/ClaudeSkills",
+        "sha": "1e3e8d0e5194a5b0d9123afd73e6b19d3827be12"
+      },
+      "strict": false,
+      "category": "development",
+      "keywords": [
+        "sql",
+        "database",
+        "postgresql",
+        "mysql",
+        "sqlite"
+      ],
+      "skills": [
+        "./sql-expert"
+      ]
+    },
+    {
+      "name": "devops-skills",
+      "description": "Docker containerization workflows and environment/secrets configuration management.",
+      "source": {
+        "source": "github",
+        "repo": "Marinski/ClaudeSkills",
+        "sha": "1e3e8d0e5194a5b0d9123afd73e6b19d3827be12"
+      },
+      "strict": false,
+      "category": "development",
+      "keywords": [
+        "docker",
+        "compose",
+        "containers",
+        "env",
+        "secrets",
+        "configuration"
+      ],
+      "skills": [
+        "./docker-workflow",
+        "./env-config"
+      ]
+    },
+    {
+      "name": "code-quality-skills",
+      "description": "Advanced Git operations, automated code review, and systematic debugging with the TRACE framework.",
+      "source": {
+        "source": "github",
+        "repo": "Marinski/ClaudeSkills",
+        "sha": "1e3e8d0e5194a5b0d9123afd73e6b19d3827be12"
+      },
+      "strict": false,
+      "category": "development",
+      "keywords": [
+        "git",
+        "code-review",
+        "security",
+        "debugging",
+        "errors"
+      ],
+      "skills": [
+        "./git-advanced",
+        "./code-reviewer",
+        "./error-detective"
+      ]
+    },
+    {
+      "name": "communication-skills",
+      "description": "Brand guideline enforcement, internal communications templates, and professional Markdown documentation.",
+      "source": {
+        "source": "github",
+        "repo": "Marinski/ClaudeSkills",
+        "sha": "1e3e8d0e5194a5b0d9123afd73e6b19d3827be12"
+      },
+      "strict": false,
+      "category": "productivity",
+      "keywords": [
+        "brand",
+        "style-guide",
+        "internal-comms",
+        "newsletter",
+        "markdown",
+        "readme",
+        "changelog"
+      ],
+      "skills": [
+        "./brand-guidelines",
+        "./internal-comms",
+        "./markdown-pro"
+      ]
+    },
+    {
+      "name": "creating-prompts",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/ai-enablement-prompts.git",
+        "path": "plugins/creating-prompts",
+        "sha": "989dc08d7d944f829f0300cc53b88fccd0e217a4"
+      },
+      "description": "Skills for creating new agent skills for Claude Code and VS Code Copilot"
+    },
+    {
+      "name": "figma-from-code",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/ai-enablement-prompts.git",
+        "path": "plugins/figma-from-code",
+        "sha": "989dc08d7d944f829f0300cc53b88fccd0e217a4"
+      },
+      "description": "Rebuild a Figma design system from a running web app's codebase"
+    },
+    {
+      "name": "implement-workflow",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/ai-enablement-prompts.git",
+        "path": "plugins/implement-workflow",
+        "sha": "989dc08d7d944f829f0300cc53b88fccd0e217a4"
+      },
+      "description": "End-to-end feature implementation workflow: design, build, test, self-review via a code-reviewer agent, then prep a PR."
+    },
+    {
+      "name": "code",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/ai-enablement-prompts.git",
+        "path": "plugins/code",
+        "sha": "989dc08d7d944f829f0300cc53b88fccd0e217a4"
+      },
+      "description": "Baseline planning, spec, and codebase understanding skills. Works with any codebase, any stack."
+    },
+    {
+      "name": "react",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/ai-enablement-prompts.git",
+        "path": "plugins/react",
+        "sha": "989dc08d7d944f829f0300cc53b88fccd0e217a4"
+      },
+      "description": "Core React component development patterns — modlet structure, component extraction, registry, reuse, and validation."
+    },
+    {
+      "name": "react-mock",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/ai-enablement-prompts.git",
+        "path": "plugins/react-mock",
+        "sha": "989dc08d7d944f829f0300cc53b88fccd0e217a4"
+      },
+      "description": "Mock data and data model patterns for Zod-based React apps — sample data generation, data model management, and feature workflows."
+    },
+    {
+      "name": "figma-react",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/ai-enablement-prompts.git",
+        "path": "plugins/figma-react",
+        "sha": "989dc08d7d944f829f0300cc53b88fccd0e217a4"
+      },
+      "description": "Full Figma-to-React lifecycle — design analysis, component implementation, visual sync, and Code Connect mapping. Requires Figma MCP."
+    },
+    {
+      "name": "playwright",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/ai-enablement-prompts.git",
+        "path": "plugins/playwright",
+        "sha": "989dc08d7d944f829f0300cc53b88fccd0e217a4"
+      },
+      "description": "Playwright-based QA workflows — E2E testing, debugging, responsive verification, visual diffing, and pixel-perfect orchestration. Requires Playwright MCP."
+    },
+    {
+      "name": "trpc-prisma",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/ai-enablement-prompts.git",
+        "path": "plugins/trpc-prisma",
+        "sha": "989dc08d7d944f829f0300cc53b88fccd0e217a4"
+      },
+      "description": "Type-safety patterns for tRPC + Prisma monorepos — AppRouter type inference and package instruction templates."
+    }
+  ]
+}

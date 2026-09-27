@@ -1,0 +1,12 @@
+{
+  "claude-skills": {
+    "repo": "https://github.com/Marinski/ClaudeSkills.git",
+    "ref": "master",
+    "sha": "1e3e8d0e5194a5b0d9123afd73e6b19d3827be12"
+  },
+  "ai-enablement-prompts": {
+    "repo": "https://github.com/Marinski/ai-enablement-prompts.git",
+    "ref": "main",
+    "sha": "989dc08d7d944f829f0300cc53b88fccd0e217a4"
+  }
+}

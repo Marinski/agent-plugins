@@ -1,0 +1,36 @@
+name: Check Marketplace
+
+# Gate for every change: the committed manifest must be exactly what
+# sources.json + sources.lock.json generate, pass Claude Code's plugin rules,
+# and every plugin must install from its pinned upstream commit and register
+# at least one component.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: manifest is current and every plugin installs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Manifest matches sources and pins
+        run: python3 scripts/build_marketplace.py --check
+
+      - name: .github/plugin mirror matches
+        run: cmp .claude-plugin/marketplace.json .github/plugin/marketplace.json
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Validate against Claude Code plugin rules
+        run: claude plugin validate ./
+
+      - name: Smoke test every plugin from its pinned commit
+        run: ./scripts/smoke-test-plugins.sh

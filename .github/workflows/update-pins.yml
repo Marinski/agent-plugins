@@ -1,0 +1,92 @@
+name: Update Pins
+
+# Daily (and on demand): moves every source's pin to the tip of its tracked ref,
+# regenerates the manifest, validates and smoke-tests the result, and opens (or
+# refreshes) a single PR listing what moved, with compare links per upstream.
+# Nothing reaches users until that PR is merged.
+#
+# Setup:
+#   Settings -> Actions -> General -> "Allow GitHub Actions to create and approve
+#   pull requests" must be on.
+#   Optional secret PIN_UPDATE_TOKEN (a fine-grained PAT or App token with
+#   contents + pull-requests write on this repo). PRs opened with the default
+#   GITHUB_TOKEN do not trigger other workflows, so without it check.yml will
+#   not run on the bump PR. This workflow runs the same checks itself first.
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-pins
+  cancel-in-progress: false
+
+env:
+  BRANCH: automation/update-pins
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PIN_UPDATE_TOKEN || github.token }}
+
+      - name: Move pins to the tip of each tracked ref
+        run: python3 scripts/build_marketplace.py --update --summary "$RUNNER_TEMP/summary.md"
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "All pins are current."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --stat
+          fi
+
+      - name: Install Claude Code CLI
+        if: steps.diff.outputs.changed == 'true'
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Validate against Claude Code plugin rules
+        if: steps.diff.outputs.changed == 'true'
+        run: claude plugin validate ./
+
+      - name: Smoke test every plugin from its new pin
+        if: steps.diff.outputs.changed == 'true'
+        run: ./scripts/smoke-test-plugins.sh
+
+      - name: Open or refresh the pin update PR
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.PIN_UPDATE_TOKEN || github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          BASE="$(git rev-parse --abbrev-ref HEAD)"
+          git checkout -B "$BRANCH"
+          git commit -am "chore: update plugin pins"
+          # The bot owns this branch; each run replaces it with a fresh bump from the base.
+          git push --force origin "$BRANCH"
+
+          {
+            echo "Moves plugin pins to the tip of each tracked ref. Validated and smoke-tested (every plugin installed from its new pin) before this PR was opened."
+            echo
+            echo "### What moved"
+            cat "$RUNNER_TEMP/summary.md"
+            echo
+            echo "Review the upstream changes via the compare links, then merge to publish them."
+          } > "$RUNNER_TEMP/body.md"
+
+          if [ "$(gh pr list --head "$BRANCH" --state open --json number --jq length)" -gt 0 ]; then
+            gh pr edit "$BRANCH" --body-file "$RUNNER_TEMP/body.md"
+          else
+            gh pr create --base "$BASE" --head "$BRANCH" \
+              --title "chore: update plugin pins" --body-file "$RUNNER_TEMP/body.md"
+          fi

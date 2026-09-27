@@ -1,0 +1,32 @@
+{
+  "marketplace": {
+    "name": "marinski-plugins",
+    "owner": {
+      "name": "Marinski",
+      "url": "https://github.com/Marinski"
+    },
+    "metadata": {
+      "description": "One marketplace for Marinski's agent plugins, each pinned to an exact upstream commit.",
+      "version": "1.0.0"
+    }
+  },
+  "sources": [
+    {
+      "id": "claude-skills",
+      "repo": "https://github.com/Marinski/ClaudeSkills.git",
+      "ref": "master"
+    },
+    {
+      "id": "ai-enablement-prompts",
+      "repo": "https://github.com/Marinski/ai-enablement-prompts.git",
+      "ref": "main"
+    },
+    {
+      "id": "agency-agents",
+      "repo": "https://github.com/msitarzewski/agency-agents.git",
+      "ref": "plugins",
+      "enabled": false,
+      "note": "Enable once msitarzewski/agency-agents publishes its generated marketplace to the `plugins` branch (their PR #831)."
+    }
+  ]
+}
