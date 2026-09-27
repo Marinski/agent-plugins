@@ -25,6 +25,11 @@
       "id": "agency-agents",
       "repo": "https://github.com/Marinski/agency-agents.git",
       "ref": "plugins"
+    },
+    {
+      "id": "jakubkrehel-skills",
+      "repo": "https://github.com/jakubkrehel/skills.git",
+      "ref": "main"
     }
   ]
 }

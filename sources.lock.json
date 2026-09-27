@@ -13,5 +13,10 @@
     "repo": "https://github.com/Marinski/agency-agents.git",
     "ref": "plugins",
     "sha": "473f08f27df214c94dd4224c153657427490667e"
+  },
+  "jakubkrehel-skills": {
+    "repo": "https://github.com/jakubkrehel/skills.git",
+    "ref": "main",
+    "sha": "267330e1adfc66a718fb65fa6918c1f06d0a689e"
   }
 }
