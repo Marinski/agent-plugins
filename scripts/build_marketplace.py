@@ -75,9 +75,9 @@ def read_upstream_manifest(repo: str, sha: str, path: str, cache: Path) -> dict:
 def pinned_source(repo: str, sha: str, path: str) -> dict:
     """A plugin source pointing at `path` inside `repo`, pinned to `sha`."""
     if path in ("", "."):
-        match = GITHUB_RE.match(repo)
-        if match:
-            return {"source": "github", "repo": match.group(1), "sha": sha}
+        # Use the plain https URL rather than the `github` source type: on a
+        # GitHub Actions runner `github` sources failed to clone while https
+        # `url` / `git-subdir` sources installed fine.
         return {"source": "url", "url": repo, "sha": sha}
     return {"source": "git-subdir", "url": repo, "path": path, "sha": sha}
 

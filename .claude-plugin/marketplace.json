@@ -13,8 +13,8 @@
       "name": "document-skills",
       "description": "Create, edit, and analyze Excel spreadsheets, PowerPoint presentations, and PDF documents.",
       "source": {
-        "source": "github",
-        "repo": "Marinski/ClaudeSkills",
+        "source": "url",
+        "url": "https://github.com/Marinski/ClaudeSkills.git",
         "sha": "1e3e8d0e5194a5b0d9123afd73e6b19d3827be12"
       },
       "strict": false,
@@ -37,8 +37,8 @@
       "name": "development-skills",
       "description": "Playwright web app testing, MCP server development, D3.js data visualization, and REST/GraphQL API design.",
       "source": {
-        "source": "github",
-        "repo": "Marinski/ClaudeSkills",
+        "source": "url",
+        "url": "https://github.com/Marinski/ClaudeSkills.git",
         "sha": "1e3e8d0e5194a5b0d9123afd73e6b19d3827be12"
       },
       "strict": false,
@@ -64,8 +64,8 @@
       "name": "database-skills",
       "description": "SQL query writing, optimization, and schema design for PostgreSQL, MySQL, SQLite, and SQL Server.",
       "source": {
-        "source": "github",
-        "repo": "Marinski/ClaudeSkills",
+        "source": "url",
+        "url": "https://github.com/Marinski/ClaudeSkills.git",
         "sha": "1e3e8d0e5194a5b0d9123afd73e6b19d3827be12"
       },
       "strict": false,
@@ -85,8 +85,8 @@
       "name": "devops-skills",
       "description": "Docker containerization workflows and environment/secrets configuration management.",
       "source": {
-        "source": "github",
-        "repo": "Marinski/ClaudeSkills",
+        "source": "url",
+        "url": "https://github.com/Marinski/ClaudeSkills.git",
         "sha": "1e3e8d0e5194a5b0d9123afd73e6b19d3827be12"
       },
       "strict": false,
@@ -108,8 +108,8 @@
       "name": "code-quality-skills",
       "description": "Advanced Git operations, automated code review, and systematic debugging with the TRACE framework.",
       "source": {
-        "source": "github",
-        "repo": "Marinski/ClaudeSkills",
+        "source": "url",
+        "url": "https://github.com/Marinski/ClaudeSkills.git",
         "sha": "1e3e8d0e5194a5b0d9123afd73e6b19d3827be12"
       },
       "strict": false,
@@ -131,8 +131,8 @@
       "name": "communication-skills",
       "description": "Brand guideline enforcement, internal communications templates, and professional Markdown documentation.",
       "source": {
-        "source": "github",
-        "repo": "Marinski/ClaudeSkills",
+        "source": "url",
+        "url": "https://github.com/Marinski/ClaudeSkills.git",
         "sha": "1e3e8d0e5194a5b0d9123afd73e6b19d3827be12"
       },
       "strict": false,

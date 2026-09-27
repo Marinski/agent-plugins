@@ -34,7 +34,7 @@ Nothing is copied or vendored, and there are no submodules. The repo holds three
 |------|-----------|---------|
 | `sources.json` | you | Which repos to include, which branch or tag each one tracks, and optional filters |
 | `sources.lock.json` | the update workflow | The exact commit each source is pinned to |
-| `.claude-plugin/marketplace.json` | generated | One entry per upstream plugin, whose `source` points at the upstream repo at the pinned commit (`github` / `git-subdir` source with `sha`) |
+| `.claude-plugin/marketplace.json` | generated | One entry per upstream plugin, whose `source` points at the upstream repo at the pinned commit (`url` or `git-subdir` source with `sha`, fetched over https) |
 
 `scripts/build_marketplace.py` reads each upstream's own `.claude-plugin/marketplace.json` at the pinned commit and rewrites every plugin's relative source into a pinned remote source. New plugins that appear upstream are picked up automatically at the next pin update. `.github/plugin/marketplace.json` is a symlink to the same file, for Copilot tools.
 
@@ -77,4 +77,4 @@ Two sources can't publish the same plugin name; the build stops and asks for a `
 
 ## Compatibility
 
-Pinned remote sources (`github`, `url`, and `git-subdir` with `sha`) are tested with Claude Code: CI installs every plugin this way. VS Code and Copilot CLI read the same manifest format, but check that your version supports `git-subdir` sources before relying on it there.
+Pinned remote sources (`url` and `git-subdir` with `sha`) are tested with Claude Code: CI installs every plugin this way. VS Code and Copilot CLI read the same manifest format, but check that your version supports `git-subdir` sources before relying on it there.
