@@ -22,9 +22,11 @@ copilot plugin marketplace add Marinski/agent-plugins
 |--------|--------|---------|
 | [Marinski/ClaudeSkills](https://github.com/Marinski/ClaudeSkills) | `master` | document-skills, development-skills, database-skills, devops-skills, code-quality-skills, communication-skills |
 | [Marinski/ai-enablement-prompts](https://github.com/Marinski/ai-enablement-prompts) | `main` | creating-prompts, figma-from-code, implement-workflow, code, react, react-mock, figma-react, playwright, trpc-prisma |
-| [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | `plugins` | *disabled until that repo publishes its marketplace branch* |
+| [Marinski/agency-agents](https://github.com/Marinski/agency-agents) | `plugins` | agency-academic, agency-design, agency-engineering, agency-finance, agency-game-development, agency-gis, agency-healthcare, agency-marketing, agency-paid-media, agency-product, agency-project-management, agency-research, agency-sales, agency-security, agency-spatial-computing, agency-specialized, agency-support, agency-testing |
 
 The exact commit of each source is in [`sources.lock.json`](./sources.lock.json).
+
+Install only what you need: every installed plugin's skill and agent descriptions are loaded into each session. The large agency divisions cost the most, for example about 12k tokens for `agency-engineering` and 10.6k for `agency-specialized`, compared with about 0.5k for `document-skills`. Run `claude plugin details <name>` to see a plugin's cost.
 
 ## How it works
 

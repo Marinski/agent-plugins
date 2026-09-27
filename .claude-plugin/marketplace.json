@@ -241,6 +241,186 @@
         "sha": "989dc08d7d944f829f0300cc53b88fccd0e217a4"
       },
       "description": "Type-safety patterns for tRPC + Prisma monorepos — AppRouter type inference and package instruction templates."
+    },
+    {
+      "name": "agency-academic",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/academic",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Academic division (6 specialist skills)"
+    },
+    {
+      "name": "agency-design",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/design",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Design division (10 specialist skills)"
+    },
+    {
+      "name": "agency-engineering",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/engineering",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Engineering division (64 specialist skills)"
+    },
+    {
+      "name": "agency-finance",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/finance",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Finance division (5 specialist skills)"
+    },
+    {
+      "name": "agency-game-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/game-development",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Game Development division (21 specialist skills)"
+    },
+    {
+      "name": "agency-gis",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/gis",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "GIS division (13 specialist skills)"
+    },
+    {
+      "name": "agency-healthcare",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/healthcare",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Healthcare division (3 specialist skills)"
+    },
+    {
+      "name": "agency-marketing",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/marketing",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Marketing division (36 specialist skills)"
+    },
+    {
+      "name": "agency-paid-media",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/paid-media",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Paid Media division (7 specialist skills)"
+    },
+    {
+      "name": "agency-product",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/product",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Product division (5 specialist skills)"
+    },
+    {
+      "name": "agency-project-management",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/project-management",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Project Management division (7 specialist skills)"
+    },
+    {
+      "name": "agency-research",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/research",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Research division (1 specialist skill)"
+    },
+    {
+      "name": "agency-sales",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/sales",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Sales division (9 specialist skills)"
+    },
+    {
+      "name": "agency-security",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/security",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Security division (12 specialist skills)"
+    },
+    {
+      "name": "agency-spatial-computing",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/spatial-computing",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Spatial Computing division (6 specialist skills)"
+    },
+    {
+      "name": "agency-specialized",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/specialized",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Specialized division (59 specialist skills)"
+    },
+    {
+      "name": "agency-support",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/support",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Support division (6 specialist skills)"
+    },
+    {
+      "name": "agency-testing",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/agency-agents.git",
+        "path": "plugins/testing",
+        "sha": "473f08f27df214c94dd4224c153657427490667e"
+      },
+      "description": "Testing division (9 specialist skills)"
     }
   ]
 }

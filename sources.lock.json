@@ -8,5 +8,10 @@
     "repo": "https://github.com/Marinski/ai-enablement-prompts.git",
     "ref": "main",
     "sha": "989dc08d7d944f829f0300cc53b88fccd0e217a4"
+  },
+  "agency-agents": {
+    "repo": "https://github.com/Marinski/agency-agents.git",
+    "ref": "plugins",
+    "sha": "473f08f27df214c94dd4224c153657427490667e"
   }
 }
