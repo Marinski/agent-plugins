@@ -23,6 +23,7 @@ copilot plugin marketplace add Marinski/agent-plugins
 | [Marinski/ClaudeSkills](https://github.com/Marinski/ClaudeSkills) | `master` | document-skills, development-skills, database-skills, devops-skills, code-quality-skills, communication-skills |
 | [Marinski/ai-enablement-prompts](https://github.com/Marinski/ai-enablement-prompts) | `main` | creating-prompts, figma-from-code, implement-workflow, code, react, react-mock, figma-react, playwright, trpc-prisma |
 | [Marinski/agency-agents](https://github.com/Marinski/agency-agents) | `plugins` | agency-academic, agency-design, agency-engineering, agency-finance, agency-game-development, agency-gis, agency-healthcare, agency-marketing, agency-paid-media, agency-product, agency-project-management, agency-research, agency-sales, agency-security, agency-spatial-computing, agency-specialized, agency-support, agency-testing |
+| [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | `main` | interfaces |
 
 The exact commit of each source is in [`sources.lock.json`](./sources.lock.json).
 
