@@ -23,10 +23,8 @@
     },
     {
       "id": "agency-agents",
-      "repo": "https://github.com/msitarzewski/agency-agents.git",
-      "ref": "plugins",
-      "enabled": false,
-      "note": "Enable once msitarzewski/agency-agents publishes its generated marketplace to the `plugins` branch (their PR #831)."
+      "repo": "https://github.com/Marinski/agency-agents.git",
+      "ref": "plugins"
     }
   ]
 }
