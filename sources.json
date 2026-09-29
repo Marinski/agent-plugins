@@ -30,6 +30,11 @@
       "id": "jakubkrehel-skills",
       "repo": "https://github.com/jakubkrehel/skills.git",
       "ref": "main"
+    },
+    {
+      "id": "caveman",
+      "repo": "https://github.com/juliusbrussee/caveman.git",
+      "ref": "main"
     }
   ]
 }
