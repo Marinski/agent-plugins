@@ -430,6 +430,16 @@
         "sha": "267330e1adfc66a718fb65fa6918c1f06d0a689e"
       },
       "description": "Skills for building great product interfaces: typography, colors, layout, accessibility, UI polish and writing."
+    },
+    {
+      "name": "caveman",
+      "description": "Talk like caveman. Cut filler. Keep technical details explicit.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/juliusbrussee/caveman.git",
+        "sha": "2fd153c67988e980fb0b2455c90832159a6a5a25"
+      },
+      "category": "productivity"
     }
   ]
 }
