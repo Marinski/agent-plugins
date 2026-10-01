@@ -35,6 +35,11 @@
       "id": "caveman",
       "repo": "https://github.com/juliusbrussee/caveman.git",
       "ref": "main"
+    },
+    {
+      "id": "claude-for-legal",
+      "repo": "https://github.com/anthropics/claude-for-legal.git",
+      "ref": "main"
     }
   ]
 }
