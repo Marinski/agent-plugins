@@ -22,7 +22,7 @@
   "caveman": {
     "repo": "https://github.com/juliusbrussee/caveman.git",
     "ref": "main",
-    "sha": "2fd153c67988e980fb0b2455c90832159a6a5a25"
+    "sha": "aeb45e2f787c0757a8af383a291a280cb6aeb4c1"
   },
   "claude-for-legal": {
     "repo": "https://github.com/anthropics/claude-for-legal.git",
