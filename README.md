@@ -25,6 +25,7 @@ copilot plugin marketplace add Marinski/agent-plugins
 | [Marinski/agency-agents](https://github.com/Marinski/agency-agents) | `plugins` | agency-academic, agency-design, agency-engineering, agency-finance, agency-game-development, agency-gis, agency-healthcare, agency-marketing, agency-paid-media, agency-product, agency-project-management, agency-research, agency-sales, agency-security, agency-spatial-computing, agency-specialized, agency-support, agency-testing |
 | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | `main` | interfaces |
 | [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman) | `main` | caveman |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | `main` | mattpocock-skills |
 
 The exact commit of each source is in [`sources.lock.json`](./sources.lock.json).
 

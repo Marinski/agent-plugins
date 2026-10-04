@@ -40,6 +40,11 @@
       "id": "claude-for-legal",
       "repo": "https://github.com/anthropics/claude-for-legal.git",
       "ref": "main"
+    },
+    {
+      "id": "mattpocock-skills",
+      "repo": "https://github.com/mattpocock/skills.git",
+      "ref": "main"
     }
   ]
 }
