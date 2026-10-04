@@ -639,6 +639,300 @@
         "code-review",
         "grilling"
       ]
+    },
+    {
+      "name": "wordpress-platform",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/wordpress-skills.git",
+        "path": "plugins/wordpress-platform",
+        "sha": "240f3fb1db3e0c09907f7e13255b209e3153ecb8"
+      },
+      "description": "WordPress platform fundamentals and operations: core architecture and hooks, coding and documentation standards, installation/migration/staging, multisite, content modeling (CPTs, taxonomies, meta), options and transients, database design with wpdb and custom tables, performance diagnosis and optimization, and security hardening (capabilities, sanitization, nonces, auth, backups).",
+      "license": "MIT",
+      "category": "wordpress",
+      "keywords": [
+        "wordpress",
+        "wp-core",
+        "hooks",
+        "multisite",
+        "wpdb",
+        "database",
+        "performance",
+        "caching",
+        "security",
+        "hardening",
+        "nonces",
+        "cpt",
+        "taxonomy",
+        "transients"
+      ]
+    },
+    {
+      "name": "wordpress-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/wordpress-skills.git",
+        "path": "plugins/wordpress-development",
+        "sha": "240f3fb1db3e0c09907f7e13255b209e3153ecb8"
+      },
+      "description": "Building on WordPress: plugin development (foundations, lifecycle hooks, admin menus, settings pages, shortcodes, AJAX, cron, internationalization, WordPress.org release workflow), theme development (classic and block themes, template hierarchy, theme.json, patterns, Customizer, accessibility, theme review), and REST API integration (custom endpoints, controllers, schema, HTTP API clients, authentication, XML-RPC).",
+      "license": "MIT",
+      "category": "wordpress",
+      "keywords": [
+        "wordpress",
+        "plugin-development",
+        "theme-development",
+        "rest-api",
+        "wp-rest",
+        "block-theme",
+        "theme.json",
+        "shortcode",
+        "wp_ajax",
+        "cron",
+        "wp-cli",
+        "gutenberg"
+      ]
+    },
+    {
+      "name": "wordpress-content-sync",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Marinski/wordpress-skills.git",
+        "path": "plugins/wordpress-content-sync",
+        "sha": "240f3fb1db3e0c09907f7e13255b209e3153ecb8"
+      },
+      "description": "Bidirectional WordPress content synchronization over the WP REST API using Application Password auth. Pull posts/pages as local markdown, push approved content back as drafts, resolve categories/tags/CPT taxonomies, upload media, and manage SEO meta (Yoast/RankMath). Includes a reusable sync-posts.sh script.",
+      "license": "MIT",
+      "category": "wordpress",
+      "keywords": [
+        "wordpress",
+        "content-sync",
+        "rest-api",
+        "markdown",
+        "draft",
+        "media-upload",
+        "yoast",
+        "rankmath",
+        "seo",
+        "application-password"
+      ]
+    },
+    {
+      "name": "mql5-development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/algotradingspace-dev/metatrader-skills.git",
+        "path": "plugins/mql5-development",
+        "sha": "98145306012c4f604e41538e44d64fdc94ef9291"
+      },
+      "description": "End-to-end MQL5 Expert Advisor development: EA architecture (5-layer wiring, OnTick, IsNewBar), risk engine (position sizing, drawdown guards, prop firm rules), signal generation (SMC/ICT, indicators, multi-timeframe confluence), market regime detection (trend/range, volatility, session, news filters), and trade lifecycle management (trailing stops, breakeven, partial closes, pyramiding).",
+      "license": "MIT",
+      "category": "trading",
+      "keywords": [
+        "mql5",
+        "expert-advisor",
+        "ea-development",
+        "trading-bot",
+        "risk-management",
+        "market-regime",
+        "signal-generation",
+        "forex",
+        "mt5"
+      ]
+    },
+    {
+      "name": "metatrader-platform",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/algotradingspace-dev/metatrader-skills.git",
+        "path": "plugins/metatrader-platform",
+        "sha": "98145306012c4f604e41538e44d64fdc94ef9291"
+      },
+      "description": "MetaTrader 4/5 platform operations, Python API integration, and HTTP API bridge usage. Covers terminal installation and configuration (Windows/macOS/Linux), SSL/certificate management, 2FA/TOTP setup, MetaTrader5 Python package workflows, mt5-httpapi bridge for REST-based account/symbol/trade data, and platform automation scripts.",
+      "license": "MIT",
+      "category": "trading",
+      "keywords": [
+        "metatrader",
+        "mt4",
+        "mt5",
+        "python-api",
+        "http-api",
+        "terminal-setup",
+        "platform-automation",
+        "trading-infrastructure"
+      ]
+    },
+    {
+      "name": "metatrader-research",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/algotradingspace-dev/metatrader-skills.git",
+        "path": "plugins/metatrader-research",
+        "sha": "98145306012c4f604e41538e44d64fdc94ef9291"
+      },
+      "description": "Backtesting methodology and trading performance analytics for MetaTrader strategies. Covers MT5 Strategy Tester configuration, walk-forward and Monte Carlo analysis, overfitting detection, performance metric computation (Sharpe, Calmar, Profit Factor, drawdown), Python-based pandas evaluation pipelines, imported HTML report parsing, and experiment tracking for EA variants.",
+      "license": "MIT",
+      "category": "trading",
+      "keywords": [
+        "backtesting",
+        "strategy-tester",
+        "performance-analytics",
+        "monte-carlo",
+        "walk-forward",
+        "sharpe-ratio",
+        "drawdown",
+        "python",
+        "pandas",
+        "mt5"
+      ]
+    },
+    {
+      "name": "mt5-httpapi",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/psyb0t/mt5-httpapi.git",
+        "path": ".agents",
+        "ref": "master"
+      },
+      "description": "MetaTrader 5 trading via REST for a running mt5-httpapi bridge — market data, orders, positions, history, and server-side technical analysis.",
+      "license": "WTFPL",
+      "category": "trading",
+      "keywords": [
+        "metatrader",
+        "mt5",
+        "trading",
+        "rest-api",
+        "forex"
+      ]
+    },
+    {
+      "name": "mql-developer",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/algotradingspace-dev/metatrader-skills.git",
+        "path": "plugins/mql-developer",
+        "sha": "98145306012c4f604e41538e44d64fdc94ef9291"
+      },
+      "description": "Comprehensive MQL4/MQL5 development reference for MetaTrader 4 and 5: language syntax for both dialects, OOP and EA architecture patterns, order/position and risk operations, custom indicators and UI panels, WebRequest/REST/JSON external communication, Strategy Tester and walk-forward backtesting, code protection and licensing, and MQL4-to-MQL5 migration. Vendored verbatim from ThomasPraun/mql-developer.",
+      "license": "MIT",
+      "category": "trading",
+      "keywords": [
+        "mql4",
+        "mql5",
+        "metatrader",
+        "expert-advisor",
+        "indicators",
+        "mql-migration",
+        "webrequest",
+        "backtesting",
+        "licensing",
+        "third-party"
+      ]
+    },
+    {
+      "name": "trading-fundamentals",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/algotradingspace-dev/metatrader-skills.git",
+        "path": "plugins/trading-fundamentals",
+        "sha": "98145306012c4f604e41538e44d64fdc94ef9291"
+      },
+      "description": "Forex macroeconomic fundamentals reference. Interprets CPI, GDP, NFP, PMI, rate decisions, employment, trade balance, current account, housing, wages, and confidence/survey releases across USD, EUR, GBP, GER, JPY, CAD, AUD, NZD, CHF, and CNY, with trading context and high-value release ranking per currency.",
+      "license": "MIT",
+      "category": "trading",
+      "keywords": [
+        "forex",
+        "fundamentals",
+        "macro",
+        "nfp",
+        "cpi",
+        "gdp",
+        "pmi",
+        "rate-decisions",
+        "economic-calendar",
+        "usd",
+        "eur",
+        "gbp",
+        "jpy",
+        "cad",
+        "aud",
+        "nzd",
+        "chf",
+        "cny"
+      ]
+    },
+    {
+      "name": "trading-web-systems",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/algotradingspace-dev/metatrader-skills.git",
+        "path": "plugins/trading-web-systems",
+        "sha": "98145306012c4f604e41538e44d64fdc94ef9291"
+      },
+      "description": "Elite TypeScript/React fintech and trading systems engineering: decimal-safe money arithmetic, trading metric implementations (Sharpe, Calmar, Drawdown, Profit Factor), real-time WebSocket market data feeds on Cloudflare Durable Objects, live-price React hooks, trading dashboard UI (PriceTicker, OrderBook), and OHLCV ingestion pipelines.",
+      "license": "MIT",
+      "category": "trading",
+      "keywords": [
+        "fintech",
+        "typescript",
+        "react",
+        "trading-dashboard",
+        "websocket",
+        "market-data",
+        "order-book",
+        "ohlcv",
+        "sharpe-ratio",
+        "profit-factor",
+        "decimal",
+        "cloudflare",
+        "durable-objects"
+      ]
+    },
+    {
+      "name": "pskoett-ai-skills",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/pskoett/pskoett-ai-skills.git",
+        "path": "plugin",
+        "sha": "92a21ceb0c9e97ea9b4783de6c1955f40960aae6"
+      },
+      "description": "Two-loop skill pipeline for Claude Code. Inner loop (plan-interview, intent-framed-agent, context-surfing, verify-gate, self-healing, simplify-and-harden) catches failures in-session — including active runtime recovery via self-healing when a command, test, build, helper, env, or external service fails mid-task. Outer loop (learning-aggregator, harness-updater, eval-creator, pre-flight-check) captures recurring patterns, promotes them to CLAUDE.md as permanent rules, and turns failures into regression tests. The harness gets stronger with every cycle.",
+      "version": "2.6.2",
+      "license": "MIT",
+      "repository": "https://github.com/pskoett/pskoett-skills",
+      "keywords": [
+        "skill-pipeline",
+        "two-loop",
+        "verify-gate",
+        "self-healing",
+        "learning-aggregator",
+        "eval-creator",
+        "context-management",
+        "self-improvement",
+        "code-quality",
+        "security"
+      ]
+    },
+    {
+      "name": "andrej-karpathy-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/multica-ai/andrej-karpathy-skills.git",
+        "sha": "2c606141936f1eeef17fa3043a72095b4765b9c2"
+      },
+      "description": "Behavioral guidelines to reduce common LLM coding mistakes: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution",
+      "version": "1.0.0",
+      "author": {
+        "name": "forrestchang"
+      },
+      "keywords": [
+        "guidelines",
+        "best-practices",
+        "coding",
+        "karpathy"
+      ],
+      "category": "workflow"
     }
   ]
 }

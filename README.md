@@ -26,6 +26,10 @@ copilot plugin marketplace add Marinski/agent-plugins
 | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | `main` | interfaces |
 | [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman) | `main` | caveman |
 | [mattpocock/skills](https://github.com/mattpocock/skills) | `main` | mattpocock-skills |
+| [Marinski/wordpress-skills](https://github.com/Marinski/wordpress-skills) | `main` | wordpress-platform, wordpress-development, wordpress-content-sync |
+| [algotradingspace-dev/metatrader-skills](https://github.com/algotradingspace-dev/metatrader-skills) | `main` | mql5-development, metatrader-platform, metatrader-research, mt5-httpapi, mql-developer, trading-fundamentals, trading-web-systems |
+| [pskoett/pskoett-ai-skills](https://github.com/pskoett/pskoett-ai-skills) | `main` | pskoett-ai-skills |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | `main` | andrej-karpathy-skills |
 
 The exact commit of each source is in [`sources.lock.json`](./sources.lock.json).
 

@@ -45,6 +45,26 @@
       "id": "mattpocock-skills",
       "repo": "https://github.com/mattpocock/skills.git",
       "ref": "main"
+    },
+    {
+      "id": "wordpress-skills",
+      "repo": "https://github.com/Marinski/wordpress-skills.git",
+      "ref": "main"
+    },
+    {
+      "id": "metatrader-skills",
+      "repo": "https://github.com/algotradingspace-dev/metatrader-skills.git",
+      "ref": "main"
+    },
+    {
+      "id": "pskoett-skills",
+      "repo": "https://github.com/pskoett/pskoett-ai-skills.git",
+      "ref": "main"
+    },
+    {
+      "id": "karpathy-skills",
+      "repo": "https://github.com/multica-ai/andrej-karpathy-skills.git",
+      "ref": "main"
     }
   ]
 }
