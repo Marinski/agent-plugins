@@ -933,6 +933,15 @@
         "karpathy"
       ],
       "category": "workflow"
+    },
+    {
+      "name": "marketing-skills",
+      "description": "50 marketing skills for technical marketers and founders: CRO, copywriting, cold email, prospecting, SEO, AI SEO, paid ads, SMS, ad creative, video production, image generation, co-marketing, churn prevention, pricing, referrals, revenue operations, sales enablement, customer research, site architecture, comprehensive AARRR-structured marketing plans, public relations and earned media, offer design, event marketing and webinars, and more",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/coreyhaines31/marketingskills.git",
+        "sha": "dda3841f0b294e01e93b1541486beefbfab0915e"
+      }
     }
   ]
 }

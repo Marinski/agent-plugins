@@ -53,5 +53,10 @@
     "repo": "https://github.com/multica-ai/andrej-karpathy-skills.git",
     "ref": "main",
     "sha": "2c606141936f1eeef17fa3043a72095b4765b9c2"
+  },
+  "marketing-skills": {
+    "repo": "https://github.com/coreyhaines31/marketingskills.git",
+    "ref": "main",
+    "sha": "dda3841f0b294e01e93b1541486beefbfab0915e"
   }
 }
