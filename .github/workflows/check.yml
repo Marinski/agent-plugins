@@ -16,9 +16,9 @@ permissions:
 jobs:
   check:
     name: manifest is current and every plugin installs
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Manifest matches sources and pins
         run: python3 scripts/build_marketplace.py --check
