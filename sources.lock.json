@@ -58,5 +58,10 @@
     "repo": "https://github.com/coreyhaines31/marketingskills.git",
     "ref": "main",
     "sha": "dda3841f0b294e01e93b1541486beefbfab0915e"
+  },
+  "graph-plugins": {
+    "repo": "https://github.com/Marinski/graph-plugins.git",
+    "ref": "main",
+    "sha": "f9d58ea51be092c9a4362dc1b5af20fbb317a216"
   }
 }

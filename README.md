@@ -133,6 +133,13 @@ Anthropic's legal skill packs.
   - *Paid ads & outbound* — `ads`, `cold-email`, `prospecting`, `emails`, `sms`, `influencer-marketing`, `public-relations`.
   - *Strategy, pricing & revenue* — `marketing-plan`, `marketing-ideas`, `marketing-loops`, `marketing-psychology`, `marketing-council`, `offers`, `pricing`, `product-marketing`, `customer-research`, `revops`, `sales-enablement`, `launch`.
 
+### [Marinski/graph-plugins](https://github.com/Marinski/graph-plugins) · `main`
+
+Wrappers for two code knowledge-graph tools that don't ship their own marketplace. Both leave out the upstream hooks, so Claude Desktop can copy them to SSH hosts. Each needs its upstream CLI installed on every machine where you use it.
+
+- **graphify** — The `/graphify` skill from [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify): turns code, docs, papers, images or videos into a queryable knowledge graph (`graph.html`, `graph.json`, `GRAPH_REPORT.md`). Requires `uv tool install graphifyy`.
+- **codegraph** — The MCP server from [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph): a pre-indexed, local code graph queried with `codegraph_explore`. Requires `npm i -g @colbymchenry/codegraph` and `codegraph init` per project. Telemetry is off for the MCP server.
+
 ### Overlaps between plugins
 
 Sources are independent and the marketplace does **not** de-duplicate skills across plugins, so a few plugins cover the same ground. Installing both loads duplicate descriptions into every session, which costs tokens and can make the agent pick either one at random. The overlaps worth knowing:
@@ -146,6 +153,7 @@ Sources are independent and the marketplace does **not** de-duplicate skills acr
 - **WordPress** — `wordpress-platform` and `wordpress-development` split core/ops from plugin/theme/REST but both touch core and the REST API; `wordpress-content-sync` stands alone.
 - **Legal** — `legal-builder-hub` is a meta-installer for other legal skills; `cocounsel-legal` (Westlaw research) complements `litigation-legal`, `regulatory-legal`, and `ip-legal`; the niche packs overlap on contract review (`commercial-legal`/`product-legal`) and on data/AI terms (`privacy-legal`/`ai-governance-legal`).
 - **Writing & tone** — `caveman` overlaps `communication-skills` and `copy-editing`.
+- **Code graphs** — `graphify` and `codegraph` both index a codebase into a graph and both tell the agent to query it before grep or file reads. Pick one per project to avoid conflicting guidance.
 
 ### Cost
 
