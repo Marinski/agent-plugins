@@ -437,7 +437,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/juliusbrussee/caveman.git",
-        "sha": "99aafe151a1be72be783e662858e8a0955add59f"
+        "sha": "2e08b9177c07bb7249a8a2d1a6758e5db281d002"
       },
       "category": "productivity"
     },
@@ -628,7 +628,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mattpocock/skills.git",
-        "sha": "f3fc5632f401156837ee3872f14fe33ccf1024ea"
+        "sha": "b0618bc436ad893b3c5e84e55fba86586d34a404"
       },
       "description": "Matt Pocock's agent skills for real engineering (grilling, spec/ticket flows, TDD, code review, domain modelling and more).",
       "category": "engineering",
@@ -940,7 +940,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/coreyhaines31/marketingskills.git",
-        "sha": "5e721d73ac85be8ba917d6a9ca9cb5bc98f02b80"
+        "sha": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff"
       }
     },
     {
