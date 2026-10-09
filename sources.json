@@ -75,6 +75,11 @@
       "id": "graph-plugins",
       "repo": "https://github.com/Marinski/graph-plugins.git",
       "ref": "main"
+    },
+    {
+      "id": "ponytail",
+      "repo": "https://github.com/DietrichGebert/ponytail.git",
+      "ref": "main"
     }
   ]
 }

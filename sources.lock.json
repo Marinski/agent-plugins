@@ -63,5 +63,10 @@
     "repo": "https://github.com/Marinski/graph-plugins.git",
     "ref": "main",
     "sha": "6185b6e595debd08d6e362c7454a92c813e34ae8"
+  },
+  "ponytail": {
+    "repo": "https://github.com/DietrichGebert/ponytail.git",
+    "ref": "main",
+    "sha": "9cc65d03aa2da1db7121b912d03596409ee340b8"
   }
 }

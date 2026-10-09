@@ -140,6 +140,10 @@ Wrappers for two code knowledge-graph tools that don't ship their own marketplac
 - **graphify** — The `/graphify` skill from [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify): turns code, docs, papers, images or videos into a queryable knowledge graph (`graph.html`, `graph.json`, `GRAPH_REPORT.md`). Requires `uv tool install graphifyy`.
 - **codegraph** — The MCP server from [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph): a pre-indexed, local code graph queried with `codegraph_explore`. Requires `npm i -g @colbymchenry/codegraph` and `codegraph init` per project. Telemetry is off for the MCP server.
 
+### [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) · `main`
+
+- **ponytail** — YAGNI coding style: before writing, stop at the first rung that holds (does it need to exist, already in the codebase, the standard library, a platform feature, an installed dependency, one line, then the minimum that works). Cuts code, cost and tokens; never cuts validation, error handling, security or accessibility. Adds `/ponytail`, `/ponytail-review`, `/ponytail-audit` and `/ponytail-debt`.
+
 ### Overlaps between plugins
 
 Sources are independent and the marketplace does **not** de-duplicate skills across plugins, so a few plugins cover the same ground. Installing both loads duplicate descriptions into every session, which costs tokens and can make the agent pick either one at random. The overlaps worth knowing:
@@ -147,7 +151,7 @@ Sources are independent and the marketplace does **not** de-duplicate skills acr
 - **Marketing** — `marketing-skills` overlaps heavily with the agency `agency-marketing` (36) and `agency-paid-media` (7) divisions, and partly with `agency-sales` (`sales-enablement`) and `agency-product` (`product-marketing`). Choose one side rather than both.
 - **Frontend & Figma** — `figma-from-code` (code → Figma) and `figma-react` (Figma → React) are two halves of the same Figma workflow; `react`, `react-mock`, and `trpc-prisma` overlap each other and the frontend skills inside `development-skills` and `agency-engineering`.
 - **QA & testing** — `playwright` overlaps `development-skills` (bundles Playwright testing) and `agency-testing`.
-- **Engineering workflow** — `implement-workflow`, `code`, `mattpocock-skills`, and `pskoett-ai-skills` all span planning → spec/tickets → implement → review/TDD; `code-quality-skills` (review, debugging) and `andrej-karpathy-skills` (coding-behaviour rules) cover the same territory.
+- **Engineering workflow** — `implement-workflow`, `code`, `mattpocock-skills`, and `pskoett-ai-skills` all span planning → spec/tickets → implement → review/TDD; `code-quality-skills` (review, debugging), `andrej-karpathy-skills` (coding-behaviour rules), and `ponytail` (lazy/YAGNI coding and review) cover the same territory.
 - **Design & UI** — `interfaces` overlaps `agency-design` and the design/UI specialists inside `agency-specialized`.
 - **MetaTrader** — `mql5-development` and `mql-developer` both cover MQL EA development (the latter is the broader reference); `metatrader-platform` already documents `mt5-httpapi`; `trading-web-systems` overlaps `react`/`code` on the web side.
 - **WordPress** — `wordpress-platform` and `wordpress-development` split core/ops from plugin/theme/REST but both touch core and the REST API; `wordpress-content-sync` stands alone.

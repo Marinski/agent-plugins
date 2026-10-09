@@ -981,6 +981,16 @@
         "call-graph",
         "codegraph"
       ]
+    },
+    {
+      "name": "ponytail",
+      "description": "Forces the laziest solution that works. YAGNI, stdlib first, one line over fifty.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/DietrichGebert/ponytail.git",
+        "sha": "9cc65d03aa2da1db7121b912d03596409ee340b8"
+      },
+      "category": "productivity"
     }
   ]
 }
