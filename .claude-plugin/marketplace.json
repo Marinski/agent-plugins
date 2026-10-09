@@ -949,7 +949,7 @@
         "source": "git-subdir",
         "url": "https://github.com/Marinski/graph-plugins.git",
         "path": "plugins/graphify",
-        "sha": "f9d58ea51be092c9a4362dc1b5af20fbb317a216"
+        "sha": "6185b6e595debd08d6e362c7454a92c813e34ae8"
       },
       "description": "Turn a codebase, docs, papers, images or videos into a queryable knowledge graph (graph.html, graph.json, GRAPH_REPORT.md) with /graphify, plus query/path/explain tools. Wraps the upstream graphify skill without its PreToolUse hooks. Requires the graphifyy Python package (uv tool install graphifyy).",
       "license": "Apache-2.0 OR MIT",
@@ -969,7 +969,7 @@
         "source": "git-subdir",
         "url": "https://github.com/Marinski/graph-plugins.git",
         "path": "plugins/codegraph",
-        "sha": "f9d58ea51be092c9a4362dc1b5af20fbb317a216"
+        "sha": "6185b6e595debd08d6e362c7454a92c813e34ae8"
       },
       "description": "CodeGraph MCP server: a pre-indexed, local code knowledge graph that answers code questions in one codegraph_explore call (symbols, verbatim source, call paths). Wraps the upstream MCP config without its prompt hook. Requires the codegraph CLI (npm i -g @colbymchenry/codegraph) and codegraph init per project.",
       "license": "MIT",
