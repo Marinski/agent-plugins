@@ -22,7 +22,7 @@
   "caveman": {
     "repo": "https://github.com/juliusbrussee/caveman.git",
     "ref": "main",
-    "sha": "99aafe151a1be72be783e662858e8a0955add59f"
+    "sha": "2e08b9177c07bb7249a8a2d1a6758e5db281d002"
   },
   "claude-for-legal": {
     "repo": "https://github.com/anthropics/claude-for-legal.git",
@@ -32,7 +32,7 @@
   "mattpocock-skills": {
     "repo": "https://github.com/mattpocock/skills.git",
     "ref": "main",
-    "sha": "f3fc5632f401156837ee3872f14fe33ccf1024ea"
+    "sha": "b0618bc436ad893b3c5e84e55fba86586d34a404"
   },
   "wordpress-skills": {
     "repo": "https://github.com/Marinski/wordpress-skills.git",
@@ -57,7 +57,7 @@
   "marketing-skills": {
     "repo": "https://github.com/coreyhaines31/marketingskills.git",
     "ref": "main",
-    "sha": "5e721d73ac85be8ba917d6a9ca9cb5bc98f02b80"
+    "sha": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff"
   },
   "graph-plugins": {
     "repo": "https://github.com/Marinski/graph-plugins.git",
