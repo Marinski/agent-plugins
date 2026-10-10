@@ -32,7 +32,7 @@
   "mattpocock-skills": {
     "repo": "https://github.com/mattpocock/skills.git",
     "ref": "main",
-    "sha": "b0618bc436ad893b3c5e84e55fba86586d34a404"
+    "sha": "49dd158d1076134a641b33efb035946536778336"
   },
   "wordpress-skills": {
     "repo": "https://github.com/Marinski/wordpress-skills.git",
@@ -67,6 +67,6 @@
   "ponytail": {
     "repo": "https://github.com/DietrichGebert/ponytail.git",
     "ref": "main",
-    "sha": "9cc65d03aa2da1db7121b912d03596409ee340b8"
+    "sha": "9b58c1ffb790c075ca32e70a89cf1d80588f4abf"
   }
 }
