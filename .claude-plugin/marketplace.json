@@ -628,7 +628,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mattpocock/skills.git",
-        "sha": "b0618bc436ad893b3c5e84e55fba86586d34a404"
+        "sha": "49dd158d1076134a641b33efb035946536778336"
       },
       "description": "Matt Pocock's agent skills for real engineering (grilling, spec/ticket flows, TDD, code review, domain modelling and more).",
       "category": "engineering",
@@ -988,7 +988,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/DietrichGebert/ponytail.git",
-        "sha": "9cc65d03aa2da1db7121b912d03596409ee340b8"
+        "sha": "9b58c1ffb790c075ca32e70a89cf1d80588f4abf"
       },
       "category": "productivity"
     }
