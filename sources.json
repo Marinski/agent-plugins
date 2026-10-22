@@ -80,6 +80,67 @@
       "id": "ponytail",
       "repo": "https://github.com/DietrichGebert/ponytail.git",
       "ref": "main"
+    },
+    {
+      "id": "ai-design-skills",
+      "repo": "https://github.com/elayadesign/ai-design-skills.git",
+      "ref": "main",
+      "plugins": [
+        {
+          "name": "landing-page-design",
+          "path": "skills/landing-page-design",
+          "description": "Build a high-converting landing page: intake questions, page structure, conversion copy and SEO, plus a strict visual system for typography, spacing, radius, colour, icons and motion.",
+          "category": "design",
+          "keywords": [
+            "landing-page",
+            "conversion",
+            "copywriting",
+            "typography",
+            "design-system",
+            "seo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "redesign-skill",
+      "repo": "https://github.com/elayadesign/redesign-skill.git",
+      "ref": "main",
+      "plugins": [
+        {
+          "name": "redesign-existing-projects",
+          "path": "skills/redesign-existing-projects",
+          "description": "Audit an existing site, page or component for generic AI design, weak states and sloppy CSS, then fix it in place without rewriting the stack.",
+          "category": "design",
+          "keywords": [
+            "redesign",
+            "design-audit",
+            "css",
+            "typography",
+            "ui-polish"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bear2u-skills",
+      "repo": "https://github.com/bear2u/my-skills.git",
+      "ref": "master",
+      "plugins": [
+        {
+          "name": "landing-page-guide-v2",
+          "path": "skills/landing-page-guide-v2",
+          "description": "Distinctive, high-converting landing pages on Next.js 14+ with ShadCN UI: the 11 essential conversion elements, bold aesthetic direction, and production-ready code that avoids generic AI templates.",
+          "category": "design",
+          "keywords": [
+            "landing-page",
+            "nextjs",
+            "shadcn",
+            "conversion",
+            "tailwind"
+          ]
+        }
+      ]
     }
   ]
 }

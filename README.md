@@ -144,6 +144,20 @@ Wrappers for two code knowledge-graph tools that don't ship their own marketplac
 
 - **ponytail** — YAGNI coding style: before writing, stop at the first rung that holds (does it need to exist, already in the codebase, the standard library, a platform feature, an installed dependency, one line, then the minimum that works). Cuts code, cost and tokens; never cuts validation, error handling, security or accessibility. Adds `/ponytail`, `/ponytail-review`, `/ponytail-audit` and `/ponytail-debt`.
 
+### [elayadesign/ai-design-skills](https://github.com/elayadesign/ai-design-skills) · `main`
+
+- **landing-page-design** — Builds a landing page from scratch: intake questions, page structure, conversion copy, and SEO, then a non-negotiable visual system for typography, spacing, radius, backgrounds, hero layout, icons and motion. Its design values live in one section, so a fork can retarget the whole system.
+
+### [elayadesign/redesign-skill](https://github.com/elayadesign/redesign-skill) · `main`
+
+- **redesign-existing-projects** — The companion audit for a site that already exists: diagnoses generic AI design, weak or missing states and sloppy CSS, then applies targeted fixes in the current stack (`inner = outer − gap` radii, a closed spacing scale, approved fonts only, no gradients). Reports findings before fixing.
+
+### [bear2u/my-skills](https://github.com/bear2u/my-skills) · `master`
+
+Only `landing-page-guide-v2` is published here; the upstream repo holds many other skills (Korean-language prompts, card-news generators, Next.js initialisers) that this marketplace does not install. The upstream declares no licence.
+
+- **landing-page-guide-v2** — Distinctive, high-converting landing pages on Next.js 14+ with ShadCN UI: the 11 essential conversion elements, a committed aesthetic direction, and production-ready code that avoids generic template looks. Ships two reference files (`11-essential-elements`, `component-examples`).
+
 ### Overlaps between plugins
 
 Sources are independent and the marketplace does **not** de-duplicate skills across plugins, so a few plugins cover the same ground. Installing both loads duplicate descriptions into every session, which costs tokens and can make the agent pick either one at random. The overlaps worth knowing:
@@ -152,7 +166,7 @@ Sources are independent and the marketplace does **not** de-duplicate skills acr
 - **Frontend & Figma** — `figma-from-code` (code → Figma) and `figma-react` (Figma → React) are two halves of the same Figma workflow; `react`, `react-mock`, and `trpc-prisma` overlap each other and the frontend skills inside `development-skills` and `agency-engineering`.
 - **QA & testing** — `playwright` overlaps `development-skills` (bundles Playwright testing) and `agency-testing`.
 - **Engineering workflow** — `implement-workflow`, `code`, `mattpocock-skills`, and `pskoett-ai-skills` all span planning → spec/tickets → implement → review/TDD; `code-quality-skills` (review, debugging), `andrej-karpathy-skills` (coding-behaviour rules), and `ponytail` (lazy/YAGNI coding and review) cover the same territory.
-- **Design & UI** — `interfaces` overlaps `agency-design` and the design/UI specialists inside `agency-specialized`.
+- **Design & UI** — `interfaces` overlaps `agency-design` and the design/UI specialists inside `agency-specialized`. `landing-page-design` and `landing-page-guide-v2` both build a new page (the first is framework-agnostic with its own value system, the second is Next.js + ShadCN); `redesign-existing-projects` is the audit for a page that already exists and is the intended companion to `landing-page-design`. Loading two of them duplicates the same typography and spacing rules.
 - **MetaTrader** — `mql5-development` and `mql-developer` both cover MQL EA development (the latter is the broader reference); `metatrader-platform` already documents `mt5-httpapi`; `trading-web-systems` overlaps `react`/`code` on the web side.
 - **WordPress** — `wordpress-platform` and `wordpress-development` split core/ops from plugin/theme/REST but both touch core and the REST API; `wordpress-content-sync` stands alone.
 - **Legal** — `legal-builder-hub` is a meta-installer for other legal skills; `cocounsel-legal` (Westlaw research) complements `litigation-legal`, `regulatory-legal`, and `ip-legal`; the niche packs overlap on contract review (`commercial-legal`/`product-legal`) and on data/AI terms (`privacy-legal`/`ai-governance-legal`).
@@ -195,7 +209,7 @@ Nothing is copied or vendored, and there are no submodules. The repo holds three
 
 | File | Edited by | Purpose |
 |------|-----------|---------|
-| `sources.json` | you | Which repos to include, which branch or tag each one tracks, and optional filters |
+| `sources.json` | you | Which repos to include, which branch or tag each one tracks, and optional filters or inline plugin lists |
 | `sources.lock.json` | the update workflow | The exact commit each source is pinned to |
 | `.claude-plugin/marketplace.json` | generated | One entry per upstream plugin, whose `source` points at the upstream repo at the pinned commit (`url` or `git-subdir` source with `sha`, fetched over https) |
 
@@ -223,11 +237,20 @@ Edit `sources.json`:
   "include": ["plugin-a"],                          // optional: only these plugins
   "exclude": ["plugin-b"],                          // optional: skip these plugins
   "manifest": ".claude-plugin/marketplace.json",    // optional: upstream manifest path
+  "plugins": [                                      // optional: inline, for repos with no manifest
+    {
+      "name": "my-skill",
+      "path": "skills/my-skill",                    // plugin folder inside the repo
+      "description": "What it does.",
+      "category": "design",                         // any other marketplace fields are passed through
+      "keywords": ["one", "two"]
+    }
+  ],
   "enabled": false                                  // optional: keep but skip
 }
 ```
 
-The source repo must have its own plugin marketplace manifest. Then pin it, regenerate, and check:
+Most sources bring their own plugin marketplace manifest; `plugins` is for the ones that are just skill folders (such as [`elayadesign/ai-design-skills`](https://github.com/elayadesign/ai-design-skills)). Then pin it, regenerate, and check:
 
 ```bash
 python3 scripts/build_marketplace.py --update   # pin every source to its ref's tip + regenerate
@@ -236,7 +259,7 @@ claude plugin validate ./
 ./scripts/smoke-test-plugins.sh                 # or pass plugin names to test a subset
 ```
 
-Two sources can't publish the same plugin name; the build stops and asks for a `prefix`.
+A source with `plugins` still pins one exact commit; each entry's `path` becomes a `git-subdir` source at that commit, so only the listed folder is installed — never the whole repo. Two sources can't publish the same plugin name; the build stops and asks for a `prefix`.
 
 ## Compatibility
 

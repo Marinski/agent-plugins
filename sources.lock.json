@@ -68,5 +68,20 @@
     "repo": "https://github.com/DietrichGebert/ponytail.git",
     "ref": "main",
     "sha": "9cc65d03aa2da1db7121b912d03596409ee340b8"
+  },
+  "ai-design-skills": {
+    "repo": "https://github.com/elayadesign/ai-design-skills.git",
+    "ref": "main",
+    "sha": "1c1e97cb9878e236552c772092dda7adcdddbcb2"
+  },
+  "redesign-skill": {
+    "repo": "https://github.com/elayadesign/redesign-skill.git",
+    "ref": "main",
+    "sha": "64627f6ebe7a7a2f17c0affe4fe5838e2d46a876"
+  },
+  "bear2u-skills": {
+    "repo": "https://github.com/bear2u/my-skills.git",
+    "ref": "master",
+    "sha": "8ed57847845fe88e9a4df445659b30b5a414fa09"
   }
 }

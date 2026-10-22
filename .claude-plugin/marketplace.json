@@ -991,6 +991,64 @@
         "sha": "9cc65d03aa2da1db7121b912d03596409ee340b8"
       },
       "category": "productivity"
+    },
+    {
+      "name": "landing-page-design",
+      "description": "Build a high-converting landing page: intake questions, page structure, conversion copy and SEO, plus a strict visual system for typography, spacing, radius, colour, icons and motion.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/elayadesign/ai-design-skills.git",
+        "path": "skills/landing-page-design",
+        "sha": "1c1e97cb9878e236552c772092dda7adcdddbcb2"
+      },
+      "category": "design",
+      "keywords": [
+        "landing-page",
+        "conversion",
+        "copywriting",
+        "typography",
+        "design-system",
+        "seo"
+      ],
+      "strict": false
+    },
+    {
+      "name": "redesign-existing-projects",
+      "description": "Audit an existing site, page or component for generic AI design, weak states and sloppy CSS, then fix it in place without rewriting the stack.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/elayadesign/redesign-skill.git",
+        "path": "skills/redesign-existing-projects",
+        "sha": "64627f6ebe7a7a2f17c0affe4fe5838e2d46a876"
+      },
+      "category": "design",
+      "keywords": [
+        "redesign",
+        "design-audit",
+        "css",
+        "typography",
+        "ui-polish"
+      ],
+      "strict": false
+    },
+    {
+      "name": "landing-page-guide-v2",
+      "description": "Distinctive, high-converting landing pages on Next.js 14+ with ShadCN UI: the 11 essential conversion elements, bold aesthetic direction, and production-ready code that avoids generic AI templates.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/bear2u/my-skills.git",
+        "path": "skills/landing-page-guide-v2",
+        "sha": "8ed57847845fe88e9a4df445659b30b5a414fa09"
+      },
+      "category": "design",
+      "keywords": [
+        "landing-page",
+        "nextjs",
+        "shadcn",
+        "conversion",
+        "tailwind"
+      ],
+      "strict": false
     }
   ]
 }

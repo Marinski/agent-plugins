@@ -22,6 +22,10 @@ Per-source options in sources.json:
   prefix      prepended to every plugin name from this source, to avoid clashes
   include     only take these upstream plugin names
   exclude     skip these upstream plugin names
+  plugins     declare plugins inline for upstreams that have no manifest of
+              their own; each entry needs name, path (the plugin folder inside
+              the repo, e.g. "skills/my-skill") and description, and may carry
+              any other marketplace fields (category, keywords, license)
   enabled     false to keep the entry without building it
 """
 
@@ -82,6 +86,32 @@ def pinned_source(repo: str, sha: str, path: str) -> dict:
     return {"source": "git-subdir", "url": repo, "path": path, "sha": sha}
 
 
+def inline_manifest(src: dict) -> dict:
+    """A manifest-shaped view of plugins declared in sources.json.
+
+    Same shape as an upstream marketplace file, with each entry's `source`
+    set to the plugin's path inside the repo, so the build below treats both
+    kinds of source identically. `path` is dropped: it becomes the pinned
+    source, not a marketplace field.
+    """
+    plugins = []
+    for spec in src["plugins"]:
+        if not spec.get("path"):
+            sys.exit(f"ERROR: inline plugin '{spec.get('name', '?')}' in source "
+                     f"'{src['id']}' needs a \"path\"")
+        entry = {
+            "name": spec["name"],
+            "description": spec.get("description", ""),
+            "source": spec["path"],
+        }
+        # Any other marketplace field (category, keywords, license, …) passes
+        # through untouched; `path` becomes the pinned source above.
+        entry.update({k: v for k, v in spec.items() if k not in ("name", "path")})
+        entry.setdefault("strict", False)
+        plugins.append(entry)
+    return {"plugins": plugins}
+
+
 def plugin_path(source: str, plugin_root: str | None) -> str:
     path = source
     if plugin_root and not source.startswith("./"):
@@ -105,7 +135,10 @@ def build(sources: dict, lock: dict, cache: Path) -> dict:
         if not pin or pin.get("repo") != repo or pin.get("ref") != src["ref"]:
             sys.exit(f"ERROR: source '{sid}' has no matching pin in {LOCK.name}; run with --update")
         sha = pin["sha"]
-        upstream = read_upstream_manifest(repo, sha, src.get("manifest", DEFAULT_UPSTREAM_MANIFEST), cache)
+        if "plugins" in src:
+            upstream = inline_manifest(src)
+        else:
+            upstream = read_upstream_manifest(repo, sha, src.get("manifest", DEFAULT_UPSTREAM_MANIFEST), cache)
         plugin_root = (upstream.get("metadata") or {}).get("pluginRoot")
         include, exclude = src.get("include"), set(src.get("exclude", []))
 
