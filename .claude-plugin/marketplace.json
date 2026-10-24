@@ -427,7 +427,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/jakubkrehel/skills.git",
-        "sha": "d574cc8a576dc24256ad38268b8d03d86724a1b3"
+        "sha": "019ab7c199154f4509b55f12d84a4f5b578dc606"
       },
       "description": "Skills for building great product interfaces: typography, colors, layout, accessibility, UI polish and writing."
     },
@@ -437,7 +437,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/juliusbrussee/caveman.git",
-        "sha": "2e08b9177c07bb7249a8a2d1a6758e5db281d002"
+        "sha": "bae9beaf3aa6dc509f05f3d3ed239c827f6e51bb"
       },
       "category": "productivity"
     },
@@ -628,7 +628,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mattpocock/skills.git",
-        "sha": "b0618bc436ad893b3c5e84e55fba86586d34a404"
+        "sha": "5beb35b040e3de97e54fa9e386d7e42d15c295c2"
       },
       "description": "Matt Pocock's agent skills for real engineering (grilling, spec/ticket flows, TDD, code review, domain modelling and more).",
       "category": "engineering",
@@ -895,10 +895,10 @@
         "source": "git-subdir",
         "url": "https://github.com/pskoett/pskoett-ai-skills.git",
         "path": "plugin",
-        "sha": "5a836dc7163da6799fe34ed4283da6d7f0358f14"
+        "sha": "47dc16a191d10c35a9c71203a65bb00752c79f94"
       },
-      "description": "Two-loop skill pipeline for Claude Code. Inner loop (plan-interview, intent-framed-agent, context-surfing, verify-gate, self-healing, simplify-and-harden) catches failures in-session — including active runtime recovery via self-healing when a command, test, build, helper, env, or external service fails mid-task. Outer loop (learning-aggregator, harness-updater, eval-creator, pre-flight-check) captures recurring patterns, promotes them to CLAUDE.md as permanent rules, and turns failures into regression tests. The harness gets stronger with every cycle.",
-      "version": "2.6.2",
+      "description": "Two-loop skill pipeline for Claude Code. Inner loop (plan-interview, intent-framed-agent, session-context, context-surfing, verify-gate, self-healing, simplify-and-harden) catches failures in-session — including active runtime recovery via self-healing when a command, test, build, helper, env, or external service fails mid-task. Outer loop (learning-aggregator, harness-updater, eval-creator, pre-flight-check) captures recurring patterns, promotes them to CLAUDE.md as permanent rules, and turns failures into regression tests. The harness gets stronger with every cycle.",
+      "version": "2.7.1",
       "license": "MIT",
       "repository": "https://github.com/pskoett/pskoett-skills",
       "keywords": [
@@ -936,11 +936,11 @@
     },
     {
       "name": "marketing-skills",
-      "description": "50 marketing skills for technical marketers and founders: CRO, copywriting, cold email, prospecting, SEO, AI SEO, paid ads, SMS, ad creative, video production, image generation, co-marketing, churn prevention, pricing, referrals, revenue operations, sales enablement, customer research, site architecture, comprehensive AARRR-structured marketing plans, public relations and earned media, offer design, event marketing and webinars, and more",
+      "description": "52 marketing skills for technical marketers and founders: CRO, copywriting, cold email, prospecting, SEO, AI SEO, paid ads, SMS, ad creative, video production, image generation, co-marketing, churn prevention, pricing, referrals, revenue operations, sales enablement, customer research, site architecture, comprehensive AARRR-structured marketing plans, public relations and earned media, offer design, event marketing and webinars, and more",
       "source": {
         "source": "url",
         "url": "https://github.com/coreyhaines31/marketingskills.git",
-        "sha": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff"
+        "sha": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b"
       }
     },
     {
@@ -988,7 +988,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/DietrichGebert/ponytail.git",
-        "sha": "9cc65d03aa2da1db7121b912d03596409ee340b8"
+        "sha": "09c434ab73ca43761c5d8b0c5d341926c2fba710"
       },
       "category": "productivity"
     },

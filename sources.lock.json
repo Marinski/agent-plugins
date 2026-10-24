@@ -17,12 +17,12 @@
   "jakubkrehel-skills": {
     "repo": "https://github.com/jakubkrehel/skills.git",
     "ref": "main",
-    "sha": "d574cc8a576dc24256ad38268b8d03d86724a1b3"
+    "sha": "019ab7c199154f4509b55f12d84a4f5b578dc606"
   },
   "caveman": {
     "repo": "https://github.com/juliusbrussee/caveman.git",
     "ref": "main",
-    "sha": "2e08b9177c07bb7249a8a2d1a6758e5db281d002"
+    "sha": "bae9beaf3aa6dc509f05f3d3ed239c827f6e51bb"
   },
   "claude-for-legal": {
     "repo": "https://github.com/anthropics/claude-for-legal.git",
@@ -32,7 +32,7 @@
   "mattpocock-skills": {
     "repo": "https://github.com/mattpocock/skills.git",
     "ref": "main",
-    "sha": "b0618bc436ad893b3c5e84e55fba86586d34a404"
+    "sha": "5beb35b040e3de97e54fa9e386d7e42d15c295c2"
   },
   "wordpress-skills": {
     "repo": "https://github.com/Marinski/wordpress-skills.git",
@@ -47,7 +47,7 @@
   "pskoett-skills": {
     "repo": "https://github.com/pskoett/pskoett-ai-skills.git",
     "ref": "main",
-    "sha": "5a836dc7163da6799fe34ed4283da6d7f0358f14"
+    "sha": "47dc16a191d10c35a9c71203a65bb00752c79f94"
   },
   "karpathy-skills": {
     "repo": "https://github.com/multica-ai/andrej-karpathy-skills.git",
@@ -57,7 +57,7 @@
   "marketing-skills": {
     "repo": "https://github.com/coreyhaines31/marketingskills.git",
     "ref": "main",
-    "sha": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff"
+    "sha": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b"
   },
   "graph-plugins": {
     "repo": "https://github.com/Marinski/graph-plugins.git",
@@ -67,7 +67,7 @@
   "ponytail": {
     "repo": "https://github.com/DietrichGebert/ponytail.git",
     "ref": "main",
-    "sha": "9cc65d03aa2da1db7121b912d03596409ee340b8"
+    "sha": "09c434ab73ca43761c5d8b0c5d341926c2fba710"
   },
   "ai-design-skills": {
     "repo": "https://github.com/elayadesign/ai-design-skills.git",
