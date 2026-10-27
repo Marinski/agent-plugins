@@ -14,12 +14,14 @@
     {
       "id": "claude-skills",
       "repo": "https://github.com/Marinski/ClaudeSkills.git",
-      "ref": "master"
+      "ref": "master",
+      "bundle": "marinski-skills-all"
     },
     {
       "id": "ai-enablement-prompts",
       "repo": "https://github.com/Marinski/ai-enablement-prompts.git",
-      "ref": "main"
+      "ref": "main",
+      "bundle": true
     },
     {
       "id": "agency-agents",
@@ -49,12 +51,14 @@
     {
       "id": "wordpress-skills",
       "repo": "https://github.com/Marinski/wordpress-skills.git",
-      "ref": "main"
+      "ref": "main",
+      "bundle": true
     },
     {
       "id": "metatrader-skills",
       "repo": "https://github.com/algotradingspace-dev/metatrader-skills.git",
-      "ref": "main"
+      "ref": "main",
+      "bundle": true
     },
     {
       "id": "pskoett-skills",
@@ -74,7 +78,8 @@
     {
       "id": "graph-plugins",
       "repo": "https://github.com/Marinski/graph-plugins.git",
-      "ref": "main"
+      "ref": "main",
+      "bundle": true
     },
     {
       "id": "ponytail",

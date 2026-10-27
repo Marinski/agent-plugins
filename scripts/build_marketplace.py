@@ -26,6 +26,10 @@ Per-source options in sources.json:
               their own; each entry needs name, path (the plugin folder inside
               the repo, e.g. "skills/my-skill") and description, and may carry
               any other marketplace fields (category, keywords, license)
+  bundle      true (or a plugin name) to also emit one plugin that has no
+              skills of its own and depends on every plugin taken from this
+              source, so `plugin install <id>-all@marketplace` installs the
+              whole repo; the name defaults to "<id>-all"
   enabled     false to keep the entry without building it
 """
 
@@ -143,6 +147,7 @@ def build(sources: dict, lock: dict, cache: Path) -> dict:
         include, exclude = src.get("include"), set(src.get("exclude", []))
 
         taken = 0
+        taken_names: list[str] = []
         for plugin in upstream.get("plugins", []):
             name = plugin["name"]
             if (include is not None and name not in include) or name in exclude:
@@ -157,6 +162,7 @@ def build(sources: dict, lock: dict, cache: Path) -> dict:
                          f"and '{sid}'; set a \"prefix\" on one of them in {SOURCES.name}")
             owners[entry["name"]] = sid
             out["plugins"].append(entry)
+            taken_names.append(entry["name"])
             taken += 1
 
         missing = set(include or []) - {p["name"] for p in upstream.get("plugins", [])}
@@ -164,6 +170,18 @@ def build(sources: dict, lock: dict, cache: Path) -> dict:
             sys.exit(f"ERROR: source '{sid}' includes unknown plugins: {', '.join(sorted(missing))}")
         if taken == 0:
             sys.exit(f"ERROR: source '{sid}' contributed no plugins")
+        if src.get("bundle"):
+            bundle = src["bundle"] if isinstance(src["bundle"], str) else f"{sid}-all"
+            if bundle in owners:
+                sys.exit(f"ERROR: bundle name '{bundle}' for source '{sid}' clashes with a plugin from '{owners[bundle]}'")
+            owners[bundle] = sid
+            out["plugins"].append({
+                "name": bundle,
+                "description": f"Installs every plugin from {sid}: " + ", ".join(taken_names),
+                "source": "./bundles/empty",
+                "strict": False,
+                "dependencies": [f"{n}@{out['name']}" for n in taken_names],
+            })
     return out
 
 
