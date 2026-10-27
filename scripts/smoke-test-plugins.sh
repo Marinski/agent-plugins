@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # Installs every plugin in the marketplace into a throwaway Claude Code config
 # (fetching each from its pinned upstream commit) and fails if any plugin
-# does not install or registers no components at all.
+# does not install or registers no components at all. A bundle (an entry with
+# "dependencies" and no skills of its own) must instead have every dependency
+# installed alongside it.
 #
 # Usage: ./scripts/smoke-test-plugins.sh [plugin-name ...]   (default: all)
 # Requires: jq and the Claude Code CLI (override the binary with $CLAUDE).
@@ -30,6 +32,21 @@ for plugin in "${plugins[@]}"; do
   if ! $CLAUDE plugin install "$plugin@$MARKETPLACE_NAME" >/dev/null 2>"$CLAUDE_CONFIG_DIR/err"; then
     echo "FAIL $plugin: install failed: $(tail -1 "$CLAUDE_CONFIG_DIR/err")" >&2
     errors=$((errors + 1))
+    continue
+  fi
+  mapfile -t deps < <(jq -r --arg p "$plugin" '.plugins[] | select(.name == $p) | (.dependencies // [])[]' "$MANIFEST")
+  if (( ${#deps[@]} > 0 )); then
+    installed="$($CLAUDE plugin list)"
+    missing=()
+    for dep in "${deps[@]}"; do
+      grep -qF "❯ $dep" <<<"$installed" || missing+=("$dep")
+    done
+    if (( ${#missing[@]} > 0 )); then
+      echo "FAIL $plugin: dependencies not installed: ${missing[*]}" >&2
+      errors=$((errors + 1))
+    else
+      echo "OK   $plugin: bundle of ${#deps[@]} plugins"
+    fi
     continue
   fi
   details="$($CLAUDE plugin details "$plugin")"
