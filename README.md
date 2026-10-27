@@ -177,6 +177,16 @@ Sources are independent and the marketplace does **not** de-duplicate skills acr
 
 Install only what you need: every installed plugin's skill and agent descriptions are loaded into each session. The large agency divisions cost the most, for example about 12k tokens for `agency-engineering` and 10.6k for `agency-specialized`, compared with about 0.5k for `document-skills`. Run `claude plugin details <name>` to see a plugin's cost.
 
+## Installing a whole repo at once
+
+A source with `"bundle": true` in `sources.json` also gets one plugin, `<id>-all`, that has no skills of its own and depends on every plugin from that source (set `"bundle": "name"` to choose the name; `claude-` names are reserved). Currently: `marinski-skills-all`, `ai-enablement-prompts-all`, `wordpress-skills-all`, `metatrader-skills-all`, `graph-plugins-all`.
+
+```bash
+claude plugin install metatrader-skills-all@marinski-plugins
+```
+
+Every plugin installed adds its skill descriptions to every session, so the large `agency-agents` and `claude-for-legal` sources are deliberately not bundled.
+
 ## Updating your local copy
 
 Every plugin is pinned to an exact commit, so a new release — a merged [pin update](#keeping-it-up-to-date), or a newly added source such as `marketing-skills` — does not reach you until you refresh your client's catalogue and update the plugin.

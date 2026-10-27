@@ -153,6 +153,20 @@
       ]
     },
     {
+      "name": "marinski-skills-all",
+      "description": "Installs every plugin from claude-skills: document-skills, development-skills, database-skills, devops-skills, code-quality-skills, communication-skills",
+      "source": "./bundles/empty",
+      "strict": false,
+      "dependencies": [
+        "document-skills@marinski-plugins",
+        "development-skills@marinski-plugins",
+        "database-skills@marinski-plugins",
+        "devops-skills@marinski-plugins",
+        "code-quality-skills@marinski-plugins",
+        "communication-skills@marinski-plugins"
+      ]
+    },
+    {
       "name": "creating-prompts",
       "source": {
         "source": "git-subdir",
@@ -241,6 +255,23 @@
         "sha": "989dc08d7d944f829f0300cc53b88fccd0e217a4"
       },
       "description": "Type-safety patterns for tRPC + Prisma monorepos — AppRouter type inference and package instruction templates."
+    },
+    {
+      "name": "ai-enablement-prompts-all",
+      "description": "Installs every plugin from ai-enablement-prompts: creating-prompts, figma-from-code, implement-workflow, code, react, react-mock, figma-react, playwright, trpc-prisma",
+      "source": "./bundles/empty",
+      "strict": false,
+      "dependencies": [
+        "creating-prompts@marinski-plugins",
+        "figma-from-code@marinski-plugins",
+        "implement-workflow@marinski-plugins",
+        "code@marinski-plugins",
+        "react@marinski-plugins",
+        "react-mock@marinski-plugins",
+        "figma-react@marinski-plugins",
+        "playwright@marinski-plugins",
+        "trpc-prisma@marinski-plugins"
+      ]
     },
     {
       "name": "agency-academic",
@@ -719,6 +750,17 @@
       ]
     },
     {
+      "name": "wordpress-skills-all",
+      "description": "Installs every plugin from wordpress-skills: wordpress-platform, wordpress-development, wordpress-content-sync",
+      "source": "./bundles/empty",
+      "strict": false,
+      "dependencies": [
+        "wordpress-platform@marinski-plugins",
+        "wordpress-development@marinski-plugins",
+        "wordpress-content-sync@marinski-plugins"
+      ]
+    },
+    {
       "name": "mql5-development",
       "source": {
         "source": "git-subdir",
@@ -890,6 +932,21 @@
       ]
     },
     {
+      "name": "metatrader-skills-all",
+      "description": "Installs every plugin from metatrader-skills: mql5-development, metatrader-platform, metatrader-research, mt5-httpapi, mql-developer, trading-fundamentals, trading-web-systems",
+      "source": "./bundles/empty",
+      "strict": false,
+      "dependencies": [
+        "mql5-development@marinski-plugins",
+        "metatrader-platform@marinski-plugins",
+        "metatrader-research@marinski-plugins",
+        "mt5-httpapi@marinski-plugins",
+        "mql-developer@marinski-plugins",
+        "trading-fundamentals@marinski-plugins",
+        "trading-web-systems@marinski-plugins"
+      ]
+    },
+    {
       "name": "pskoett-ai-skills",
       "source": {
         "source": "git-subdir",
@@ -980,6 +1037,16 @@
         "code-search",
         "call-graph",
         "codegraph"
+      ]
+    },
+    {
+      "name": "graph-plugins-all",
+      "description": "Installs every plugin from graph-plugins: graphify, codegraph",
+      "source": "./bundles/empty",
+      "strict": false,
+      "dependencies": [
+        "graphify@marinski-plugins",
+        "codegraph@marinski-plugins"
       ]
     },
     {
