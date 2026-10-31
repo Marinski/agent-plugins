@@ -17,12 +17,12 @@
   "jakubkrehel-skills": {
     "repo": "https://github.com/jakubkrehel/skills.git",
     "ref": "main",
-    "sha": "d574cc8a576dc24256ad38268b8d03d86724a1b3"
+    "sha": "592aedc44d7d5b3e29740984252902f3e5402a1c"
   },
   "caveman": {
     "repo": "https://github.com/juliusbrussee/caveman.git",
     "ref": "main",
-    "sha": "2e08b9177c07bb7249a8a2d1a6758e5db281d002"
+    "sha": "9b68f7ed12b05e7efaff18e65c5a3fc2849fd0a4"
   },
   "claude-for-legal": {
     "repo": "https://github.com/anthropics/claude-for-legal.git",
@@ -32,7 +32,7 @@
   "mattpocock-skills": {
     "repo": "https://github.com/mattpocock/skills.git",
     "ref": "main",
-    "sha": "b0618bc436ad893b3c5e84e55fba86586d34a404"
+    "sha": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa"
   },
   "wordpress-skills": {
     "repo": "https://github.com/Marinski/wordpress-skills.git",
@@ -47,7 +47,7 @@
   "pskoett-skills": {
     "repo": "https://github.com/pskoett/pskoett-ai-skills.git",
     "ref": "main",
-    "sha": "5a836dc7163da6799fe34ed4283da6d7f0358f14"
+    "sha": "878b0e48bca74849c6219815882e75e60cfa2b72"
   },
   "karpathy-skills": {
     "repo": "https://github.com/multica-ai/andrej-karpathy-skills.git",
@@ -57,7 +57,7 @@
   "marketing-skills": {
     "repo": "https://github.com/coreyhaines31/marketingskills.git",
     "ref": "main",
-    "sha": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff"
+    "sha": "88c79f6528a9347420e57ceb1fff9a60de651768"
   },
   "graph-plugins": {
     "repo": "https://github.com/Marinski/graph-plugins.git",
@@ -67,17 +67,17 @@
   "ponytail": {
     "repo": "https://github.com/DietrichGebert/ponytail.git",
     "ref": "main",
-    "sha": "9cc65d03aa2da1db7121b912d03596409ee340b8"
+    "sha": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846"
   },
   "ai-design-skills": {
     "repo": "https://github.com/elayadesign/ai-design-skills.git",
     "ref": "main",
-    "sha": "1c1e97cb9878e236552c772092dda7adcdddbcb2"
+    "sha": "4fdcdd52f15eda09da1257c303c860c13e0c879f"
   },
   "redesign-skill": {
     "repo": "https://github.com/elayadesign/redesign-skill.git",
     "ref": "main",
-    "sha": "64627f6ebe7a7a2f17c0affe4fe5838e2d46a876"
+    "sha": "7df13f6a289f4a7f91c5fe3efd70f51fd584ec28"
   },
   "bear2u-skills": {
     "repo": "https://github.com/bear2u/my-skills.git",
